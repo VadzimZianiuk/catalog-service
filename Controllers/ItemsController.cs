@@ -92,7 +92,7 @@ namespace CatalogService.Controllers
         /// </summary>
         /// <param name="id">Id</param>
         /// <param name="item">Item data</param>
-        [HttpPatch]
+        [HttpPost]
         [Route("{id:int}")]
         [SwaggerResponse((int)HttpStatusCode.OK)]
         [SwaggerResponse((int)HttpStatusCode.NotFound, "There is no item with same id")]
